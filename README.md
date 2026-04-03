@@ -1,8 +1,3 @@
-Here is a comprehensive `README.md` file based on the setup, execution flow, and prerequisites detailed in your Jupyter Notebook. 
-
-***
-
-```markdown
 # Deep Learning SFT 3B (2-Epoch) - SVG Generation
 
 This repository contains the end-to-end Jupyter Notebook (`Deep_Learning_SFT_3B_2048_Epoch2_Final.ipynb`) for training and inferencing a 3-Billion parameter language model (Qwen2.5-Coder-3B) to generate SVG graphics from text prompts. 
@@ -30,8 +25,7 @@ source venv/bin/activate  # On Windows use: venv\Scripts\activate
 **2. Install the required dependencies:**
 Run the following pip command to install all necessary packages (including Unsloth, PyTorch, and image processing tools):
 ```bash
-pip install -q pandas numpy torch pathlib kaggle
-pip install git+https://github.com/unslothai/unsloth-zoo.git git+https://github.com/unslothai/unsloth.git trl==0.24.0 bitsandbytes picosvg cairosvg opencv-python-headless editdistance mergekit llm_blender outlines scikit-learn weave wandb protobuf llguidance
+pip install git+https://github.com/unslothai/unsloth-zoo.git git+https://github.com/unslothai/unsloth.git pandas numpy torch pathlib kaggle trl==0.24.0 bitsandbytes picosvg cairosvg opencv-python-headless editdistance mergekit llm_blender outlines scikit-learn weave wandb protobuf llguidance
 ```
 
 **3. Setup Kaggle Credentials:**
