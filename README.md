@@ -51,6 +51,14 @@ Next, run the **Data Diet** section. This will heavily compress, format, and opt
 2. **Epoch 2 (Warm Restart):** Loads the merged model and trains a *new* LoRA adapter (`./sft-lora-adapter-3B-epoch2`) on the remaining ~24,000 unseen samples with a lowered learning rate.
 3. **Final Merge:** Bakes the Epoch 2 adapter into the base weights to create the `./final-merged-epoch2` model.
 
+The corresponding adapter(s) and model can be found below:
+
+[sft-lora-adapter-3B](https://drive.google.com/drive/u/3/folders/1aYTAT78FhvxE_K-mFmzcORQwyvWztZN-) 
+
+[sft-lora-adapter-3B-epoch2](https://drive.google.com/drive/u/3/folders/1an49y362VrmqNMsK1wDlng4E-RrDBP8W) 
+
+[final-merged-epoch2](https://drive.google.com/drive/u/3/folders/1dCLlK1u6ExjyPQEcuu_cm6iUHYqfWMDO) 
+
 ### Phase 3: Inference (Generation & Rescue Loop)
 If you already have `./final-merged-epoch2` generated, you can skip directly to the **Inference Section**. 
 
